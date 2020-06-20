@@ -11,3 +11,5 @@ mongoose.connection.on("open", () => {
 mongoose.connection.on("error", () => {
   console.error("MongoDB connection Error!");
 });
+
+mongoose.set("useFindAndModify", false);
